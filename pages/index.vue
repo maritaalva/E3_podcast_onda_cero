@@ -1,5 +1,8 @@
 <template>
-  <Tutorial/>
+<section>
+  <MenuMobile/>
+  <MenuWeb/>
+</section>
 </template>
 
 <script>
