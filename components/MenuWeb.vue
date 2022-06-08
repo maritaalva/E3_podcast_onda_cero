@@ -1,7 +1,7 @@
 <template>
     <div class="nav_menu">
         <nav class="menu_icons">
-            <NuxtLink to="/inicio">
+            <NuxtLink to="/index">
                 <button class="nav_button_w">
                     inicio        
                 </button>
@@ -19,6 +19,11 @@
             <NuxtLink to="/biblioteca">
                 <button class="nav_button_w">
                     biblioteca
+                </button>
+            </NuxtLink>
+            <NuxtLink to="/search">
+                <button class="nav_button_search">
+                   <img src="/isearch.svg" alt="search_bar">
                 </button>
             </NuxtLink>
         </nav>
@@ -41,7 +46,7 @@
         z-index: 9999;
         width: 100%;
         height: 85px;
-        justify-content: space-around;
+        justify-content: center;
         flex-direction: row;
         align-items: center;
         list-style-type: none;
@@ -56,8 +61,21 @@
         border-color: transparent;
         /* 0grey_light */
         background: #E6E9EB;
+        border-radius: 50%;
+        padding: 24px 40px;
+        align-items: center;
+        justify-content: center;
         /* button light */
         box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.05), 0px -1px 5px rgba(8, 8, 10, 0.02), inset 0px -3px 17px rgba(0, 0, 0, 0.04);
+    }
+    .nav_button_search{
+        background: #E6E9EB;
+        border-radius: 100%;
+        border-color: transparent;
+        box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.05), 0px -1px 5px rgba(8, 8, 10, 0.02), inset 0px -3px 17px rgba(0, 0, 0, 0.04);
+    }
+    .nav_button_search img{
+        height: 40px;
     }
     .background{
         position: fixed;

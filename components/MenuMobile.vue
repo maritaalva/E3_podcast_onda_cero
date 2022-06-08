@@ -1,7 +1,7 @@
 <template>
     <div class="nav_menu">
         <nav class="menu_icons">
-            <NuxtLink to="/inicio">
+            <NuxtLink to="/index">
                 <button class="nav_button">
                     <img src="/inicio.svg" alt="Inicio">
                     <a>inicio</a>                    
@@ -11,6 +11,11 @@
                 <button class="nav_button">
                     <img src="/horario.svg" alt="Horario">
                     <a>horario</a>                  
+                </button>
+            </NuxtLink>
+            <NuxtLink to="/buscador">
+                <button class="nav_button">
+                    <img src="/search_green.svg" alt="buscador">
                 </button>
             </NuxtLink>
             <NuxtLink to="/noticias">
@@ -66,6 +71,9 @@
     }
     .nav_button img{
         width: 40px;
+    }
+    .menu_icons nav_button:nth-child(){
+        align-self: stretch;
     }
     .blur{
         position: fixed;
