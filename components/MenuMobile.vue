@@ -1,7 +1,7 @@
 <template>
     <div class="nav_menu">
         <nav class="menu_icons">
-            <NuxtLink to="/index">
+            <NuxtLink to="/">
                 <button class="nav_button">
                     <img src="/inicio.svg" alt="Inicio">
                     <a>inicio</a>                    
@@ -83,7 +83,7 @@
         background: linear-gradient(152.97deg, rgba(255, 255, 255, 0) 0%, rgba(230, 233, 235, 0.5) 92.19%);
         z-index: 1;
         display: block;
-        backdrop-filter: blur( 35px );
+        backdrop-filter: blur( 10px );
     }
 }
 </style>

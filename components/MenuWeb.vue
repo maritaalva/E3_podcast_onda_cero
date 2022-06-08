@@ -1,7 +1,7 @@
 <template>
     <div class="nav_menu">
         <nav class="menu_icons">
-            <NuxtLink to="/index">
+            <NuxtLink to="/">
                 <button class="nav_button_w">
                     inicio        
                 </button>
