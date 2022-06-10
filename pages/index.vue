@@ -50,7 +50,7 @@ export default {
   data() {
     return {
       flickityOptions: {
-        initialIndex: 4,
+        initialIndex: 1,
         freeScroll: true,
         contain: true,
         prevNextButtons: false,

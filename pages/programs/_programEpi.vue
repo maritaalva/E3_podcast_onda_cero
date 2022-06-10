@@ -2,8 +2,9 @@
 
 <main>
   <h1>proframepi</h1>
-  <div>{{cmbpg}}</div>
+  <!-- <div>{{cmbpg}}</div> -->
   <section class="cuerpo">
+       <NuxtLink to="/reproductor"/>
         <article id="mbpg_header">
             <div class="crrpepg">
                 <div class="text_card_mbpg">
@@ -25,7 +26,6 @@
                 :tituloep="itempg.tituloep"
                 />
             </div>
-            <audio-player/>
         </section>
    </section>
 
@@ -159,30 +159,6 @@ computed: {
 </script>
 
 <style lang="postcss" scoped>
-.cuerpo{
-    margin-top: 100px;
-}
 
-#epi{
-  font-size: 32px;
-  font-weight: bold;
-  position: fixed;
-}
-section{
-  display: flex;
-  flex-direction: row;
-  padding: 30px;
-  width: 100%;
-}
-.mbpg_epis{
-  width: 90%;
-  margin-left: 10%;
-}
-.scroll{
-    margin-top: 60px;
-}
-section{
-    background-color: #f5f5f5;
-}
 
 </style>

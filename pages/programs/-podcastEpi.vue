@@ -159,30 +159,6 @@ computed: {
 </script>
 
 <style lang="postcss" scoped>
-.cuerpo{
-    margin-top: 100px;
-}
 
-#epi{
-  font-size: 32px;
-  font-weight: bold;
-  position: fixed;
-}
-section{
-  display: flex;
-  flex-direction: row;
-  padding: 30px;
-  width: 100%;
-}
-.mbpd_epis{
-  width: 90%;
-  margin-left: 10%;
-}
-.scroll{
-    margin-top: 60px;
-}
-section{
-    background-color: #f5f5f5;
-}
 
 </style>
