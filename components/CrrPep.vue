@@ -1,5 +1,5 @@
 <template>
-   <NuxtLink to="/podcastEpi">
+   <NuxtLink :to="{name: 'programs-podcastEpi', params: {titulo: titulo}}">
    <article class="crrpep">
        <!-- :style="`backgroundImage: url(${srcp})`" -->
        <!-- :style="{ backgroundImage: `url({{srcp}})`}" -->

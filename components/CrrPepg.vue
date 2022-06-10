@@ -8,7 +8,8 @@
         </div>
         <img :src="srcpg" :alt="titulopg" class="bck_card_mbpg">
 
-    </article></NuxtLink>
+    </article>
+    </NuxtLink>
 </template>
 
 <script>

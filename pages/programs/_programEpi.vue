@@ -1,10 +1,9 @@
 <template>
 
 <main>
-  <h1>proframepi</h1>
+  <h1>Programa</h1>
   <!-- <div>{{cmbpg}}</div> -->
   <section class="cuerpo">
-       <NuxtLink to="/reproductor"/>
         <article id="mbpg_header">
             <div class="crrpepg">
                 <div class="text_card_mbpg">
@@ -16,6 +15,7 @@
             <p>{{cmbpg.descripcion}}</p>
         </article>
         <section class="mbpg_epis">
+          <NuxtLink to="/reproductor">
             <img src="/inputs_programa_episodes.svg" :alt="titulo" class="bck_card_mb">
             <div class="scroll">
                 <epis-pgmb
@@ -26,6 +26,7 @@
                 :tituloep="itempg.tituloep"
                 />
             </div>
+        </NuxtLink>
         </section>
    </section>
 

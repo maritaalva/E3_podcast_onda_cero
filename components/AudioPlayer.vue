@@ -73,7 +73,7 @@ export default {
       song: {
         title: "File example",
         author: "Anonymous",
-        cover: "https://picsum.photos/300/300",
+        cover: "/pattern_mobile_1pg.svg",
         src: "/audio_example.mp3",
         start: 0,
         end: 0
