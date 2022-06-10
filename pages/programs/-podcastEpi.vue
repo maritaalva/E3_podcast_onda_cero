@@ -2,27 +2,27 @@
 
 <main>
   <h1>proframepi</h1>
-  <div>{{cmbpg}}</div>
+  <div>{{cmbpd}}</div>
   <section class="cuerpo">
-        <article id="mbpg_header">
-            <div class="crrpepg">
-                <div class="text_card_mbpg">
-                    <p>{{cmbpg.categoriapg}}</p>
-                    <h3>{{cmbpg.titulopg}}</h3>
+        <article id="mbpd_header">
+            <div class="crrpepd">
+                <div class="text_card_mbpd">
+                    <p>{{cmbpd.categoriapd}}</p>
+                    <h3>{{cmbpd.titulopd}}</h3>
                 </div>
                 <img :src="srcp" :alt="titulo" class="bck_card_mb">
             </div>
-            <p>{{cmbpg.descripcion}}</p>
+            <p>{{cmbpd.descripcion}}</p>
         </article>
-        <section class="mbpg_epis">
+        <section class="mbpd_epis">
             <img src="/inputs_programa_episodes.svg" :alt="titulo" class="bck_card_mb">
             <div class="scroll">
-                <epis-pgmb
-                v-for="(itempg, i) in cmbpg.pgepi" 
+                <epis-pdmb
+                v-for="(itempd, i) in cmbpd.pdepi" 
                 :key="i" 
-                :epnum="itempg.epnum" 
-                :alt="itempg.tituloep" 
-                :tituloep="itempg.tituloep"
+                :epnum="itempd.epnum" 
+                :alt="itempd.tituloep" 
+                :tituloep="itempd.tituloep"
                 />
             </div>
             <audio-player/>
@@ -36,20 +36,20 @@
 <script>
 export default {
 computed: {
-        cmbpg() {
-            return this.mbpgepicd.find(
-                (cdpg) => cdpg.titulopg === this.$route.params.titulopg
+        cmbpd() {
+            return this.mbpdepicd.find(
+                (cdpd) => cdpd.titulopd === this.$route.params.titulopd
             )
         }
     },
     data() {
         return {
-            mbpgepicd: [
+            mbpdepicd: [
         {
-          titulopg: 'La Brújula',
-          categoriapg: 'PROGRAMA',
-          srcpg: '/pattern_mobile_1pg.svg',
-          pgepi: [
+          titulopd: 'La Brújula',
+          categoriapd: 'PROGRAMA',
+          srcpd: '/pattern_mobile_1pd.svg',
+          pdepi: [
               {
             epnum: '9/06/2022',
             tituloep:'la columna de julia',
@@ -73,10 +73,10 @@ computed: {
           ]
         },
         {
-          titulopg: 'Más de Uno',
-          categoriapg: 'PROGRAMA',
-          srcpg: '/pattern_mobile_2pg.svg',
-          pgepi: [
+          titulopd: 'Más de Uno',
+          categoriapd: 'PROGRAMA',
+          srcpd: '/pattern_mobile_2pd.svg',
+          pdepi: [
               {
             epnum: '',
             tituloep:'',
@@ -86,10 +86,10 @@ computed: {
         },
         {
           
-          titulopg: 'La cultureta',
-          categoriapg: 'PROGRAMA',
-          srcpg: '/pattern_mobile_3pg.svg',
-          pgepi: [
+          titulopd: 'La cultureta',
+          categoriapd: 'PROGRAMA',
+          srcpd: '/pattern_mobile_3pd.svg',
+          pdepi: [
               {
             epnum: '',
             tituloep:'',
@@ -99,10 +99,10 @@ computed: {
         },
         {
           
-          titulopg: 'Gente Viajera',
-          categoriapg: 'PROGRAMA',
-          srcpg: '/pattern_mobile_4pg.svg',
-          pgepi: [
+          titulopd: 'Gente Viajera',
+          categoriapd: 'PROGRAMA',
+          srcpd: '/pattern_mobile_4pd.svg',
+          pdepi: [
               {
               epnum: '',
               tituloep:'',
@@ -110,10 +110,10 @@ computed: {
           ]
         },
         { 
-          titulopg: 'Onda agraria',
-          categoriapg: 'PROGRAMA',
-          srcpg: '/pattern_mobile_1pg.svg',
-          pgepi: [
+          titulopd: 'Onda agraria',
+          categoriapd: 'PROGRAMA',
+          srcpd: '/pattern_mobile_1pd.svg',
+          pdepi: [
               {
               epnum: '',
               tituloep:'',
@@ -121,10 +121,10 @@ computed: {
           ]
         },
         {
-          titulopg: 'En buenas manos',
-          categoriapg: 'PROGRAMA',
-          srcpg: '/pattern_mobile_2pg.svg',
-          pgepi: [
+          titulopd: 'En buenas manos',
+          categoriapd: 'PROGRAMA',
+          srcpd: '/pattern_mobile_2pd.svg',
+          pdepi: [
               {
               epnum: '',
               tituloep:'',
@@ -132,10 +132,10 @@ computed: {
           ]
         },
         {
-          titulopg: 'No son Horas',
-          categoriapg: 'PROGRAMA',
-          srcpg: '/pattern_mobile_3pg.svg',
-          pgepi: [
+          titulopd: 'No son Horas',
+          categoriapd: 'PROGRAMA',
+          srcpd: '/pattern_mobile_3pd.svg',
+          pdepi: [
               {
               epnum: '',
               tituloep:'',
@@ -143,10 +143,10 @@ computed: {
           ]
         },
                 {
-          titulopg: 'Porfin no es lunes',
-          categoriapg: 'PROGRAMA',
-          srcpg: '/pattern_mobile_4pg.svg',
-          pgepi: [
+          titulopd: 'Porfin no es lunes',
+          categoriapd: 'PROGRAMA',
+          srcpd: '/pattern_mobile_4pd.svg',
+          pdepi: [
               {
               epnum: '',
               tituloep:'',
@@ -174,7 +174,7 @@ section{
   padding: 30px;
   width: 100%;
 }
-.mbpg_epis{
+.mbpd_epis{
   width: 90%;
   margin-left: 10%;
 }
